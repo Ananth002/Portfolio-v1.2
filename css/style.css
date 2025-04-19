@@ -79,7 +79,7 @@
       background-position: center;
       background-repeat: no-repeat;
       transition: background-size 0.1s linear;
-      display: flex;
+      display: none;
       flex-direction: column;
       justify-content: center;
       align-items: center;

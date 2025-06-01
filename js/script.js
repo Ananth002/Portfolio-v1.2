@@ -1,21 +1,19 @@
-const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-    const navbar = document.getElementById('navbar');
-    
-    window.addEventListener('scroll', function () {
-      let scrollY = window.scrollY;
-      let zoomOut = 150 - scrollY / 5;
-      if (zoomOut < 100) zoomOut = 100;
-      document.querySelector('.background').style.backgroundSize = zoomOut + "%";
+const slides = document.querySelectorAll('.slide');
+    let current = 0;
+    const interval = 6000; // 4 seconds
 
-      if (scrollY > 300) {
-        navbar.classList.add('visible');
-        scrollToTopBtn.classList.add('visible');
-      } else {
-        navbar.classList.remove('visible');
-        scrollToTopBtn.classList.remove('visible');
-      }
-    });
-
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) slide.classList.add('active');
+      });
     }
+
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }
+
+    // Initial show
+    showSlide(current);
+    setInterval(nextSlide, interval);

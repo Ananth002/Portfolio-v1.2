@@ -33,7 +33,7 @@
         3D Designer and Software Developer</p>
     </div>
     <div class="social-media">
-      <div class="back"></div>
+
       <div class="links">
         <button><img width="30" height="30" src="https://img.icons8.com/glyph-neue/64/github.png"
             alt="github" /></button>
@@ -43,7 +43,6 @@
             alt="instagram-new--v1" /></button>
       </div>
     </div>
-  </div>
   </div>
   <div class="About">
     <div class="about-A">
@@ -84,27 +83,27 @@
     </p>
   </div>
   <div class="project">
-    <ul class="catagory">
-      <h3>All</h3>
-      <h3>3D model</h3>
-      <h3>Environemnt</h3>
-      <h3>Arcviz</h3>
-    </ul>
-    <div class="projects">
-      <div class="p-img">
-        <img src="img/3d-rendering-abstract-building.jpg">
-        <img src="img/ai-generated-modern-styled-entryway.jpg">
-        <img src="img/color-year-interior-design-space-with-furniture-decor.jpg">
-        <img src="img/photorealistic-timber-house-interior-with-wooden-decor-furnishings.jpg">
-      </div>
+    <div class="filter-buttons">
+      <button onclick="setCategory('All')">All</button>
+      <button onclick="setCategory('Natural')">Natural</button>
+      <button onclick="setCategory('Cars')">Cars</button>
     </div>
+    <div class="projects">
+      <button class="arrow" id="leftBtn"></button>
+      <div class="carousel-track-container">
+        <div class="carousel-track" id="carouselTrack"></div>
+      </div>
+      <button class="arrow" id="rightBtn"></button>
+    </div>
+    <div class="pagination-dots" id="paginationDots"></div>
   </div>
+  
 
   <div class="contact">
 
 
   </div>
-  <script src='js/script.js'></script>
+  <script src='JS/script.js'></script>
 </body>
 
 </html>

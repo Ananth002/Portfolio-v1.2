@@ -69,22 +69,13 @@ body {
     top: 35%;
     z-index: 3;
     height: 250px;
-    width: 75px;
+    width: 55px;
     border-radius: 50px;
     overflow: hidden;
     background-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 
-.back {
-    position: absolute;
-    width: 250px;
-    height: 75px;
-    transform-origin: center;
-    background-color: rgba(255, 255, 255, 0.363);
-    z-index: 1;
-    box-shadow: 2px 2px 4px rgba(201, 116, 116, 0.295);
-
-}
 
 .links {
     z-index: 2;
@@ -95,6 +86,16 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 10px;
+
+}
+
+.social-media::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.212);
 
 }
 
@@ -119,7 +120,8 @@ body {
     font-family: "Archivo";
     font-weight: 300;
     font-size: 38px;
-    width: 78%;
+    width: 1000px;
+
     white-space: pre-wrap;
 }
 
@@ -212,25 +214,21 @@ body {
 }
 
 .project-tt p {
-    width: 70%;
+    width: 1000px;
 }
 
 .project {
     width: 100%;
     height: 70vh;
     display: grid;
-    grid-template-rows: 40px 1fr;
+    grid-template-rows: 50px 1fr 70px;
     justify-content: center;
     top: 0;
     bottom: 0;
+    overflow: hidden;
 }
 
-.catagory {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 20px;
-}
+
 
 .projects {
     display: flex;
@@ -268,10 +266,144 @@ body {
     height: 300px;
     width: 100%;
     background-image: url(../img/black-932213_1280.jpg);
-    background-position: center;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: saturate(0);
 }
 
 .footer {
     height: 100px;
     width: 100%;
+}
+.filter-buttons {
+  margin-bottom: 20px;
+}
+.filter-buttons button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  background: none;
+  font-family: "Archivo";
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 26px;
+  position: relative;
+  background-color: transparent;
+}
+.filter-buttons button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 0%;
+  background-color: rgb(104, 104, 104);
+  transition: width 0.3s ease;
+}
+
+.filter-buttons button:hover::after {
+  width: 100%;
+}
+
+.filter-buttons button.active::after {
+  width: 100%;
+  background-color: rgb(243, 83, 15);
+}
+
+.filter-buttons button.active {
+  color: rgb(243, 83, 15);
+}
+.carousel-track-container {
+  overflow: hidden;
+  width: 980px; /* 3 cards of 200px + 2 gaps of 10px */
+}
+
+.carousel-track {
+  display: flex;
+  gap: 15px;
+  flex-wrap: nowrap;
+  transition: transform 0.4s ease;
+}
+
+.image-box {
+  width: 230px;
+  height: 350px;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.image-box:hover img {
+  transform: scale(1.1);
+}
+
+.image-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-size: 14px;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+.arrow:disabled {
+  visibility: hidden;
+}
+
+.image-box:hover .image-title {
+  transform: translateY(0%);
+}
+
+#leftBtn{
+  background-image: url(https://img.icons8.com/ios/50/circled-chevron-right--v1.png);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+ width: 50px;
+ height: 50px;
+  margin: 0;
+  transform: rotate(180deg);
+}
+#rightBtn{
+  background-image: url(https://img.icons8.com/ios/50/circled-chevron-right--v1.png);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+ width: 50px;
+ height: 50px;
+  margin: 0;
+  
+}
+
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.pagination-dots button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid red;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-dots button.active {
+  background-color: red;
 }

@@ -8,6 +8,25 @@ const allImages = [
   { url: "https://kaizenaire.com/wp-content/uploads/2023/09/The-Future-of-Luxury-Cars-singapore.png", category: "Cars",title: "Car 4" }
 ];
 
+const slides = document.querySelectorAll('.slide');
+    let current = 0;
+    const interval = 6000; // 4 seconds
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) slide.classList.add('active');
+      });
+    }
+
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }
+
+    // Initial show
+    showSlide(current);
+    setInterval(nextSlide, interval);
 
 let currentIndex = 0;
 let currentCategory = "All";
@@ -58,7 +77,6 @@ function renderImages() {
 }
 
 
-
 function updateActiveButton() {
   const buttons = document.querySelectorAll(".filter-buttons button");
   buttons.forEach(btn => {
@@ -67,15 +85,14 @@ function updateActiveButton() {
 }
 
 function updatePosition() {
-  const imageWidth = 210; // 200px + 10px gap
+  const imageWidth = 245; // image + gap
   track.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
 
   leftBtn.disabled = currentIndex === 0;
-  rightBtn.disabled = currentIndex >= filteredImages.length - 3;
+  rightBtn.disabled = currentIndex >= filteredImages.length - 4;
 
-  renderDots();
+  renderDots(); // 🔴 ensure this is here
 }
-
 
 
 leftBtn.addEventListener("click", () => {
@@ -86,7 +103,7 @@ leftBtn.addEventListener("click", () => {
 });
 
 rightBtn.addEventListener("click", () => {
-  if (currentIndex < filteredImages.length - 3) {
+  if (currentIndex < filteredImages.length - 4) {
     currentIndex++;
     updatePosition();
   }
@@ -96,8 +113,8 @@ function renderDots() {
   const dotsContainer = document.getElementById("paginationDots");
   dotsContainer.innerHTML = "";
 
-  const totalPages = Math.ceil(filteredImages.length / 3);
-  const currentPage = Math.floor(currentIndex / 3);
+  const totalPages = Math.ceil(filteredImages.length / 4);
+  const currentPage = Math.floor(currentIndex / 4);
 
   for (let i = 0; i < totalPages; i++) {
     const dot = document.createElement("button");
@@ -105,7 +122,7 @@ function renderDots() {
       dot.classList.add("active");
     }
     dot.addEventListener("click", () => {
-      currentIndex = i * 3;  // Jump to that page's first image
+      currentIndex = i * 4;  // Jump to that page's first image
       updatePosition();
     });
     dotsContainer.appendChild(dot);

@@ -104,50 +104,88 @@ body {
     background-color: transparent;
 }
 
-
-
-.about-A {
+.About {
     display: flex;
-    height: 300px;
-    width: 100%;
     justify-content: center;
-    text-align: center;
+    width: 100%;
+    height: 400px;
     align-items: center;
+    text-align: center;
     line-height: 60px;
 }
-
-.about-A h2 {
+.About h2 {
     font-family: "Archivo";
     font-weight: 300;
     font-size: 38px;
     width: 1000px;
-
     white-space: pre-wrap;
 }
-
-.About {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    flex-direction: column;
-    flex: 1fr 50px;
-    height: 500px;
-    align-items: center;
+.about-me {
+  display:grid;
+  grid-template-rows:200px 1fr;
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+  overflow: hidden;
 
 }
+.skill-box{
+  display: flex;
+  flex-direction: row;
+  width: 330px;
+  height: 150px;
+  overflow: hidden;
+  margin:5px 5px;
+  
 
-.About button {
-    display: flex;
-    height: 60px;
-    width: 150px;
-    align-items: center;
-    justify-content: center;
-    border: solid 2px black;
-    font-family: "Bebas Neue";
-    letter-spacing: 2px;
-    font-size: 15px;
-    cursor: pointer;
+}
+.s-pg{
+  flex: 2;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+}
+.s-pg h3{
+font-size: 26px;
+
+}
+.s-pg p{
+  font-family: "Archivo";
+  font-size: 17px;
+}
+.img-p{
+  opacity: .7;
+}
+.about-head{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  letter-spacing: 3px;
+  overflow: hidden;
+  align-items: center;
+  text-align: center; 
+  font-family: "Bebas Neue";
+    font-weight: 600;
+    opacity: .5;
+}
+.about-head h3{
+    font-size: 25px;
+    width: 1000px;
+    color: gray;
+}
+.about-head p{
+    font-size: 38px;
+    width: 1000px;
+}
+
+.about-box{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 300px);
+  gap: 50px;
 }
 
 .skills {
@@ -333,7 +371,15 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.4s ease;
 }
+.image-box.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
 
 .image-box img {
   width: 100%;

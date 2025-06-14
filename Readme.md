@@ -73,15 +73,15 @@ Learning core principles of:
 ---
 
 ## 🛠️ Tools & Technologies  
-![Blender](https://img.shields.io/badge/-Blender-orange?logo=blender&logoColor=white)  
-![Unreal Engine](https://img.shields.io/badge/-Unreal%20Engine-black?logo=unrealengine&logoColor=white)  
-![Substance Painter](https://img.shields.io/badge/-3D%20Painter-red?logo=adobe&logoColor=white)  
-![3ds Max](https://img.shields.io/badge/-3ds%20Max-blue?logo=autodesk&logoColor=white)  
-![Corona Render](https://img.shields.io/badge/-Corona%20Renderer-lightgrey?logo=coronarenderer&logoColor=black)  
-![Photoshop](https://img.shields.io/badge/-Photoshop-001E36?logo=adobephotoshop&logoColor=31A8FF)  
-![Java](https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white)  
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)  
-![C++](https://img.shields.io/badge/-C++-00599C?logo=c%2B%2B&logoColor=white)  
+![Blender](https://img.shields.io/badge/-Blender-orange?logo=blender&logoColor=white)
+![Unreal Engine](https://img.shields.io/badge/-Unreal%20Engine-black?logo=unrealengine&logoColor=white)
+![Substance Painter](https://img.shields.io/badge/-3D%20Painter-red?logo=adobe&logoColor=white)
+![3ds Max](https://img.shields.io/badge/-3ds%20Max-blue?logo=autodesk&logoColor=white)
+![Corona Render](https://img.shields.io/badge/-Corona%20Renderer-lightgrey?logo=coronarenderer&logoColor=black)
+![Photoshop](https://img.shields.io/badge/-Photoshop-001E36?logo=adobephotoshop&logoColor=31A8FF)
+![Java](https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/-C++-00599C?logo=c%2B%2B&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
 ---

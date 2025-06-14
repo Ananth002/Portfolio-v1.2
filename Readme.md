@@ -1,69 +1,107 @@
-# 👋 Hi, I'm ANANTH  
-🎨 3D Designer | 💻 Software Developer  
+
+# 👋 Hi, I'm Ananth  
+🎨 **3D Designer** & 💻 **Software Developer**  
+Bridging the world of **artistic design** and **technical development**.
 
 ---
 
-## 🚀 About Me
-
-I'm a multidisciplinary creator combining the worlds of **3D design** and **software development**. I bring concepts to life with precision, whether through immersive 3D models or functional, well-coded digital solutions.
+## 🌐 Portfolio  
+Check out my full portfolio here:  
+🔗 [https://ananth002.github.io/Portfolio-v1.2/](https://ananth002.github.io/Portfolio-v1.2/)
 
 ---
 
-## 🧠 Skills & Focus Areas
+## 🚀 Skills & Development Philosophy  
+**Innovating with Intelligence** — Combining creative design with logical programming to build engaging and functional digital experiences.
+
+---
 
 ### 🌐 Web Design  
-Crafting modern, user-friendly, and responsive websites. I focus on clean layouts, intuitive navigation, and optimal performance.  
+Creating visually appealing, user-friendly, and responsive websites using modern UI/UX principles.  
+- Clean layouts  
+- Intuitive navigation  
+- Optimized performance
+
+---
+
+### 🧱 3D Design  
+Crafting high-quality, detailed 3D models for various domains:  
+- **Architecture**  
+- **Product Design**  
+- **Animation**  
+Skilled in **Blender** and **3ds Max** for professional-grade modeling.
+
+---
+
+### 👨‍💻 Programming  
+Building a strong foundation in:  
+- Java ☕  
+- JavaScript  
+- C / C++  
+- Python 🐍  
+
+Focused on writing clean, efficient code and solving real-world problems through practical projects.
+
+---
 
 ### 🎨 Graphic Design  
-Designing impactful visuals, logos, posters, and UI elements using tools like **Photoshop** and **Illustrator** with a strong sense of branding and aesthetics.  
+Designing compelling visuals, branding elements, and UI assets using:  
+- Adobe Photoshop  
+- Adobe Illustrator  
 
-### 🧱 3D Design & Modeling  
-Creating detailed and professional-grade 3D models for:
-- Architectural Visualization  
-- Product Design  
-- Animations  
-Tools: **Blender**, **3ds Max**, **Substance Painter**, **Corona Renderer**  
-
-### 🕹 Game Development  
-Exploring interactive and real-time environments using **Unreal Engine**. Focused on scene creation, assets, and rendering pipelines.  
-
-### 🖼 3D Visualization  
-Bringing architectural and conceptual ideas to life with high-quality, realistic renders.  
-
-### 💻 Programming  
-Building a strong foundation in:
-- **Java**
-- **JavaScript**
-- **C / C++**
-- **Python**  
-Focused on clean code, real-world problem-solving, and logic through hands-on projects.
+Creating logos, posters, and digital art with a sharp eye for design and visual storytelling.
 
 ---
 
-## 🔧 Tools & Technologies
+### 🏗️ 3D Visualization  
+Transforming ideas into realistic 3D renders for:  
+- Interior & exterior environments  
+- Conceptual design  
+- Product presentations  
 
-![Blender](https://img.shields.io/badge/-Blender-F5792A?style=flat&logo=blender&logoColor=white)
-![Unreal Engine](https://img.shields.io/badge/-Unreal%20Engine-0E1128?style=flat&logo=unrealengine&logoColor=white)
-![3ds Max](https://img.shields.io/badge/-3ds%20Max-003A60?style=flat&logo=autodesk&logoColor=white)
-![Substance Painter](https://img.shields.io/badge/-Substance%20Painter-FF5349?style=flat&logo=adobe&logoColor=white)
-![Photoshop](https://img.shields.io/badge/-Photoshop-31A8FF?style=flat&logo=adobephotoshop&logoColor=white)
-![Java](https://img.shields.io/badge/-Java-007396?style=flat&logo=java&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/-C++-00599C?style=flat&logo=c%2B%2B&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+Expertise in lighting, texturing, and rendering workflows.
 
 ---
 
-## 🎯 Motto
-
-> **Design in 3D, Power with Code.**  
-Merging creativity and logic to build visually stunning and technically sound digital experiences.
-
----
-
-## 📫 Connect With Me
-
-Let's build, design, and innovate together. Feel free to connect and collaborate!
+### 🎮 Game Development  
+Exploring interactive design and real-time rendering using **Unreal Engine**.  
+Learning core principles of:  
+- Scene creation  
+- Game logic  
+- Immersive environments
 
 ---
 
+## 🛠️ Tools & Technologies  
+![Blender](https://img.shields.io/badge/-Blender-orange?logo=blender&logoColor=white)  
+![Unreal Engine](https://img.shields.io/badge/-Unreal%20Engine-black?logo=unrealengine&logoColor=white)  
+![Substance Painter](https://img.shields.io/badge/-3D%20Painter-red?logo=adobe&logoColor=white)  
+![3ds Max](https://img.shields.io/badge/-3ds%20Max-blue?logo=autodesk&logoColor=white)  
+![Corona Render](https://img.shields.io/badge/-Corona%20Renderer-lightgrey?logo=coronarenderer&logoColor=black)  
+![Photoshop](https://img.shields.io/badge/-Photoshop-001E36?logo=adobephotoshop&logoColor=31A8FF)  
+![Java](https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white)  
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)  
+![C++](https://img.shields.io/badge/-C++-00599C?logo=c%2B%2B&logoColor=white)  
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
+---
+
+## 🔧 Projects  
+**Design in 3D, Power with Code**  
+Projects include:  
+- High-fidelity 3D models and scenes using Blender  
+- Textured, game-ready assets  
+- Practice-based software solutions using Java, C++, and JS
+
+---
+
+### 📫 Let's Connect  
+Feel free to explore my repositories and drop a message for collaboration!
+"""
+
+# Save to file
+file_path = "/mnt/data/README_Ananth.md"
+with open(file_path, "w", encoding="utf-8") as f:
+    f.write(readme_content)
+
+file_path

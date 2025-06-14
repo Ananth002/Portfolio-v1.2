@@ -8,6 +8,7 @@ Bridging the world of **artistic design** and **technical development**.
 ## 🌐 Portfolio  
 Check out my full portfolio here:  
 🔗 [https://ananth002.github.io/Portfolio-v1.2/](https://ananth002.github.io/Portfolio-v1.2/)
+!! Working portfolio 
 
 ---
 

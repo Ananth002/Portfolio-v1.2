@@ -97,11 +97,6 @@ Projects include:
 
 ### 📫 Let's Connect  
 Feel free to explore my repositories and drop a message for collaboration!
-"""
-
-# Save to file
-file_path = "/mnt/data/README_Ananth.md"
-with open(file_path, "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
-file_path
+- ✉️ Mail : ananthnkananth@gmail.com
+  
+---

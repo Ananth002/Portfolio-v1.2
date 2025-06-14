@@ -9,6 +9,7 @@ const allImages = [
 ];
 
 const slides = document.querySelectorAll('.slide');
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
     let current = 0;
     const interval = 6000; // 4 seconds
 
@@ -128,7 +129,18 @@ function renderDots() {
     dotsContainer.appendChild(dot);
   }
 }
+window.addEventListener('scroll', function () {
+      let scrollY = window.scrollY;
+      
+      if (scrollY > 500) {
+        scrollToTopBtn.classList.add('visible');
+      } else {  
+        scrollToTopBtn.classList.remove('visible');
+      }
+    });
 
-
+ function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 // Init
 setCategory("All");

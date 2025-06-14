@@ -54,7 +54,7 @@ body {
     color: white;
     font-size: 70px;
     font-weight: bold;
-    opacity: .9px;
+    opacity: 0.9px;
 }
 
 .Sub-1 span {
@@ -73,9 +73,10 @@ body {
     border-radius: 50px;
     overflow: hidden;
     background-color: transparent;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    box-shadow:
+        0 4px 8px 0 rgba(0, 0, 0, 0.4),
+        0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
-
 
 .links {
     z-index: 2;
@@ -86,17 +87,15 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 10px;
-
 }
 
 .social-media::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
 
     background-color: rgba(255, 255, 255, 0.212);
-
 }
 
 .links button {
@@ -121,71 +120,67 @@ body {
     white-space: pre-wrap;
 }
 .about-me {
-  display:grid;
-  grid-template-rows:200px 1fr;
-  width: 100%;
-  height: 600px;
-  justify-content: center;
-  overflow: hidden;
-
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    overflow: hidden;
 }
-.skill-box{
-  display: flex;
-  flex-direction: row;
-  width: 330px;
-  height: 150px;
-  overflow: hidden;
-  margin:5px 5px;
-  
-
+.skill-box {
+    display: flex;
+    flex-direction: row;
+    width: 330px;
+    height: 150px;
+    overflow: hidden;
+    margin: 5px 5px;
 }
-.s-pg{
-  flex: 2;
-  display: grid;
-  grid-template-rows: 50px 1fr;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 10px;
+.s-pg {
+    flex: 2;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
 }
-.font-1{
-font-size: 26px;
-
+.font-1 {
+    font-size: 26px;
 }
-.s-pg p{
-  font-family: "Archivo";
-  font-size: 17px;
+.s-pg p {
+    font-family: "Archivo";
+    font-size: 17px;
 }
-.img-p{
-  opacity: .7;
+.img-p {
+    opacity: 0.7;
 }
-.about-head{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  letter-spacing: 3px;
-  overflow: hidden;
-  align-items: center;
-  text-align: center; 
-  font-family: "Bebas Neue";
+.about-head {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    letter-spacing: 3px;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    font-family: "Bebas Neue";
     font-weight: 600;
-    opacity: .5;
+    opacity: 0.5;
 }
-.about-head h3{
+.about-head h3 {
     font-size: 25px;
     width: 1000px;
     color: gray;
 }
-.about-head p{
+.about-head p {
     font-size: 38px;
     width: 1000px;
 }
 
-.about-box{
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(3, 300px);
-  gap: 50px;
+.about-box {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 300px);
+    gap: 50px;
 }
 
 .skills {
@@ -266,14 +261,11 @@ font-size: 26px;
     overflow: hidden;
 }
 
-
-
 .projects {
     display: flex;
     align-items: center;
     overflow: hidden;
     gap: 20px;
-
 }
 
 .p-img {
@@ -298,13 +290,11 @@ font-size: 26px;
     filter: saturate(1);
 }
 
-
-
 .contact {
     height: 300px;
     width: 100%;
     background-image: url(../img/black-932213_1280.jpg);
-    background-position:center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter: saturate(0);
@@ -315,141 +305,139 @@ font-size: 26px;
     width: 100%;
 }
 .filter-buttons {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .filter-buttons button {
-  padding: 10px 20px;
-  margin: 0 5px;
-  background: none;
-  font-family: "Archivo";
-  border: none;
-  color: #333;
-  cursor: pointer;
-  font-size: 26px;
-  position: relative;
-  background-color: transparent;
+    padding: 10px 20px;
+    margin: 0 5px;
+    background: none;
+    font-family: "Archivo";
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 26px;
+    position: relative;
+    background-color: transparent;
 }
 .filter-buttons button::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 5px;
-  height: 2px;
-  width: 0%;
-  background-color: rgb(104, 104, 104);
-  transition: width 0.3s ease;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 0%;
+    background-color: rgb(104, 104, 104);
+    transition: width 0.3s ease;
 }
 
 .filter-buttons button:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
 .filter-buttons button.active::after {
-  width: 100%;
-  background-color: rgb(243, 83, 15);
+    width: 100%;
+    background-color: rgb(243, 83, 15);
 }
 
 .filter-buttons button.active {
-  color: rgb(243, 83, 15);
+    color: rgb(243, 83, 15);
 }
 .carousel-track-container {
-  overflow: hidden;
-  width: 980px; /* 3 cards of 200px + 2 gaps of 10px */
+    overflow: hidden;
+    width: 980px; /* 3 cards of 200px + 2 gaps of 10px */
 }
 
 .carousel-track {
-  display: flex;
-  gap: 15px;
-  flex-wrap: nowrap;
-  transition: transform 0.4s ease;
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    transition: transform 0.4s ease;
 }
 
 .image-box {
-  width: 230px;
-  height: 350px;
-  flex-shrink: 0;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  transform: scale(0.8);
-  opacity: 0;
-  transition: all 0.4s ease;
+    width: 230px;
+    height: 350px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all 0.4s ease;
 }
 .image-box.show {
-  transform: scale(1);
-  opacity: 1;
+    transform: scale(1);
+    opacity: 1;
 }
 
-
 .image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
 }
 
 .image-box:hover img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .image-title {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
-  padding: 8px;
-  text-align: center;
-  font-size: 14px;
-  transform: translateY(100%);
-  transition: transform 0.4s ease;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
 }
 .arrow:disabled {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .image-box:hover .image-title {
-  transform: translateY(0%);
+    transform: translateY(0%);
 }
 
-#leftBtn{
-  background-image: url(https://img.icons8.com/ios/50/circled-chevron-right--v1.png);
-  border: none;
-  padding: 10px;
-  cursor: pointer;
- width: 50px;
- height: 50px;
-  margin: 0;
-  transform: rotate(180deg);
+#leftBtn {
+    background-image: url(https://img.icons8.com/ios/50/circled-chevron-right--v1.png);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    transform: rotate(180deg);
 }
-#rightBtn{
-  background-image: url(https://img.icons8.com/ios/50/circled-chevron-right--v1.png);
-  border: none;
-  padding: 10px;
-  cursor: pointer;
- width: 50px;
- height: 50px;
-  margin: 0;
-  
+#rightBtn {
+    background-image: url(https://img.icons8.com/ios/50/circled-chevron-right--v1.png);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 0;
 }
 
 .pagination-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  gap: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
 }
 
 .pagination-dots button {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 2px solid red;
-  background-color: transparent;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid red;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .pagination-dots button.active {
-  background-color: red;
+    background-color: red;
 }

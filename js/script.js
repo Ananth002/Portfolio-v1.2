@@ -10,19 +10,43 @@ const allImages = [
 
 const slides = document.querySelectorAll('.slide');
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+const progressWrapper = document.getElementById('progressWrapper');
     let current = 0;
     const interval = 6000; // 4 seconds
 
     function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) slide.classList.add('active');
-      });
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+
+  progressFills.forEach((fill, i) => {
+    fill.classList.remove('animate');
+    if (i < index) {
+      fill.style.width = "100%";
+    } else if (i === index) {
+      fill.style.width = "0%";
+      void fill.offsetWidth; // force reflow to restart animation
+      fill.classList.add('animate');
+    } else {
+      fill.style.width = "0%";
     }
+  });
+}
+
+    slides.forEach(() => {
+      const segment = document.createElement('div');
+      segment.className = 'progress-segment';
+      const fill = document.createElement('div');
+      fill.className = 'progress-fill';
+      segment.appendChild(fill);
+      progressWrapper.appendChild(segment);
+    });
+     const progressFills = document.querySelectorAll('.progress-fill');
 
     function nextSlide() {
       current = (current + 1) % slides.length;
       showSlide(current);
+      
     }
 
     // Initial show

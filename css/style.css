@@ -330,6 +330,44 @@ body {
     transition: width 0.3s ease;
 }
 
+   .progress-wrapper {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      width: 50%;
+      max-width: 500px;
+      z-index: 2;
+    }
+
+    .progress-segment {
+      flex: 1;
+      height: 4px;
+      background-color: rgba(255, 255, 255, 0.3);
+      overflow: hidden;
+      border-radius: 2px;
+      position: relative;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background-color: #ffffff;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .progress-fill.animate {
+      animation: fill 6s linear forwards;
+    }
+
+    @keyframes fill {
+      from { width: 0%; }
+      to { width: 100%; }
+    }
 .filter-buttons button:hover::after {
     width: 100%;
 }

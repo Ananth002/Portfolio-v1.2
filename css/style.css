@@ -1,3 +1,8 @@
+:root{
+  --font-BN:  "Bebas Neue", sans-serif;
+  --font-Ao: "Archivo";
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +46,7 @@ body {
     flex-direction: column;
     justify-content: center;
     top: 100px;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: var(--font-BN);
     letter-spacing: 2px;
     line-height: 70px;
     z-index: 2;
@@ -113,7 +118,7 @@ body {
     line-height: 60px;
 }
 .About h2 {
-    font-family: "Archivo";
+    font-family: var(--font-Ao);
     font-weight: 300;
     font-size: 38px;
     width: 1000px;
@@ -147,7 +152,7 @@ body {
     font-size: 26px;
 }
 .s-pg p {
-    font-family: "Archivo";
+    font-family: var(--font-Ao);
     font-size: 17px;
 }
 .img-p {
@@ -162,7 +167,7 @@ body {
     overflow: hidden;
     align-items: center;
     text-align: center;
-    font-family: "Bebas Neue";
+    font-family: var(--font-BN);
     font-weight: 600;
     opacity: 0.5;
 }
@@ -228,7 +233,7 @@ body {
     position: absolute;
     bottom: 20px;
     color: rgb(54, 53, 53);
-    font-family: "Archivo";
+    font-family: var(--font-Ao);
     font-size: 26px;
 }
 
@@ -238,7 +243,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Archivo";
+    font-family: var(--font-Ao);
     font-size: 38px;
     text-align: center;
     text-wrap: pre-wrap;
@@ -311,7 +316,7 @@ body {
     padding: 10px 20px;
     margin: 0 5px;
     background: none;
-    font-family: "Archivo";
+    font-family: var(--font-Ao);
     border: none;
     color: #333;
     cursor: pointer;
@@ -495,7 +500,7 @@ body {
       font-size: 24px;
       cursor: pointer;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      transition: background 0.3s ease;
+      transition: background-color 0.3s ease;
       z-index: 100;
       
     }

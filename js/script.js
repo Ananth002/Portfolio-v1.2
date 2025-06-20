@@ -116,7 +116,7 @@ function updatePosition() {
   leftBtn.disabled = currentIndex === 0;
   rightBtn.disabled = currentIndex >= filteredImages.length - 4;
 
-  renderDots(); // 🔴 ensure this is here
+  renderDots(); // ensure this is here
 }
 
 

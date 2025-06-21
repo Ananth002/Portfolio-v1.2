@@ -110,11 +110,11 @@ function updateActiveButton() {
 }
 
 function updatePosition() {
-  const imageWidth = 245; // image + gap
+  const imageWidth = 500; // image + gap
   track.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
 
   leftBtn.disabled = currentIndex === 0;
-  rightBtn.disabled = currentIndex >= filteredImages.length - 4;
+  rightBtn.disabled = currentIndex >= filteredImages.length - 3;
 
   renderDots(); // ensure this is here
 }
@@ -128,7 +128,7 @@ leftBtn.addEventListener("click", () => {
 });
 
 rightBtn.addEventListener("click", () => {
-  if (currentIndex < filteredImages.length - 4) {
+  if (currentIndex < filteredImages.length - 3) {
     currentIndex++;
     updatePosition();
   }
@@ -138,8 +138,8 @@ function renderDots() {
   const dotsContainer = document.getElementById("paginationDots");
   dotsContainer.innerHTML = "";
 
-  const totalPages = Math.ceil(filteredImages.length / 4);
-  const currentPage = Math.floor(currentIndex / 4);
+  const totalPages = Math.ceil(filteredImages.length / 3);
+  const currentPage = Math.floor(currentIndex / 3);
 
   for (let i = 0; i < totalPages; i++) {
     const dot = document.createElement("button");
@@ -147,7 +147,7 @@ function renderDots() {
       dot.classList.add("active");
     }
     dot.addEventListener("click", () => {
-      currentIndex = i * 4;  // Jump to that page's first image
+      currentIndex = i * 3;  // Jump to that page's first image
       updatePosition();
     });
     dotsContainer.appendChild(dot);

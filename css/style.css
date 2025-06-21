@@ -385,7 +385,8 @@ body {
 }
 .carousel-track-container {
     overflow: hidden;
-    width: 1500px; /* 3 cards of 200px + 2 gaps of 10px */
+    width:1500px;
+     /* 3 cards of 200px + 2 gaps of 10px */
 }
 
 .carousel-track {
@@ -534,6 +535,12 @@ body {
         left: 50px;
         font-size: 65px;
     }
+    .projects{
+    gap:10px;
+    grid-template-columns: 50px 1fr 50px;
+    justify-content: center;
+    align-content: center;
+}
 }
 @media screen and (max-width :700px) {
     
@@ -612,9 +619,8 @@ body {
     width:400px;
     height:450px;
 }
-.carousel-track-container {
+    .carousel-track-container {
     overflow: hidden;
     width: 100vw; /* 3 cards of 200px + 2 gaps of 10px */
-}
-
+    }
 }

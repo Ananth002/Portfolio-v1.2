@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
 :root{
   --font-BN:  "Bebas Neue", sans-serif;
-  --font-Ao: "Archivo";
+  --font-Ao: "Noto Kufi Arabic";
   --font-ro: "Roboto", sans-serif;
+
 }
 
 * {
@@ -273,9 +277,9 @@ body {
 
 .project {
     width: 100%;
-    height: 70vh;
+    height: 700px;
     display: grid;
-    grid-template-rows: 50px 1fr 70px;
+    grid-template-rows: 200px 70px 1fr 40px;
     justify-content: center;
     top: 0;
     bottom: 0;
@@ -287,6 +291,7 @@ body {
     align-items: center;
     overflow: hidden;
     gap: 20px;
+    position: relative;
 }
 
 .p-img {
@@ -318,13 +323,10 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: saturate(0);
+    color: white;
 }
 
-.footer {
-    height: 100px;
-    width: 100%;
-}
+
 .filter-buttons {
     margin-bottom: 20px;
 }
@@ -419,7 +421,7 @@ body {
     flex-shrink: 0;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 1px;
     transform: scale(0.8);
     opacity: 0;
     transition: all 0.4s ease;
@@ -454,6 +456,7 @@ body {
 }
 .arrow:disabled {
     visibility: hidden;
+   
 }
 
 .image-box:hover .image-title {
@@ -461,22 +464,26 @@ body {
 }
 
 #leftBtn {
-    background-image: url(https://img.icons8.com/ios/50/circled-chevron-right--v1.png);
-    border: none;
+    background-image: url(../icons/icons8-arrow-96.png);
+    filter: opacity(.7);
     padding: 10px;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 96px;
+    height: 96px;
     margin: 0;
     transform: rotate(180deg);
 }
 #rightBtn {
-    background-image: url(https://img.icons8.com/ios/50/circled-chevron-right--v1.png);
+    background-image: url(../icons/icons8-arrow-96.png);
+    filter: opacity(.7);
     border: none;
     padding: 10px;
+     background-color: transparent;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 96px;
+    height: 96px;
     margin: 0;
 }
 
@@ -528,6 +535,7 @@ body {
     .circle-arrow.visible {
       display: flex;
     }
+
 @media screen and (max-width :1000px) {
     .about-box{
         grid-template-columns: repeat(2,1fr);
@@ -547,6 +555,7 @@ body {
         left: 20px;
         font-size: 38px;
         width: 90vw;
+        height: 90vh;
         line-height: 42px;
     }
     .social-media{
@@ -593,5 +602,25 @@ body {
 }
 .sn{
     font-size: 16px;
+}
+.projects{
+    gap:10px;
+}
+.carousel-track-container{
+    width:100%;
+}
+#leftBtn{
+    position: absolute;
+    z-index: 50;
+    left:10px;
+}
+#rightBtn{
+    position: absolute;
+    z-index: 50;
+    right:10px;
+}
+.image-box{
+    width:400px;
+    height:450px;
 }
 }

@@ -110,7 +110,7 @@ function updateActiveButton() {
 }
 
 function updatePosition() {
-  const imageWidth = 500; // image + gap
+  const imageWidth = 400; // image + gap
   track.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
 
   leftBtn.disabled = currentIndex === 0;

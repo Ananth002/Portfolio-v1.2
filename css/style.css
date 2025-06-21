@@ -288,7 +288,7 @@ body {
 
 .projects {
     display: grid;
-    grid-template-columns: 100px 1500px 100px;
+    grid-template-columns: 100px 1200px 100px;
     justify-content: center;
     gap: 20px;
     align-items: center;
@@ -385,7 +385,7 @@ body {
 }
 .carousel-track-container {
     overflow: hidden;
-    width:1500px;
+    width:1200px;
      /* 3 cards of 200px + 2 gaps of 10px */
 }
 
@@ -398,8 +398,8 @@ body {
 }
 
 .image-box {
-    width: 485px;
-    height: 500px;
+    width: 385px;
+    height: 360px;
     flex-shrink: 0;
     position: relative;
     overflow: hidden;
@@ -446,28 +446,28 @@ body {
 }
 
 #leftBtn {
-    background-image: url(../icons/icons8-arrow-96.png);
+    background-image: url(https://img.icons8.com/ios/70/back--v1.png);
     filter: opacity(.7);
     padding: 10px;
     border: none;
     
     background-color: transparent;
     cursor: pointer;
-    width: 96px;
-    height: 96px;
+    width: 70px;
+    height: 70px;
     margin: 0;
-    transform: rotate(180deg);
+    
 }
 #rightBtn {
-    background-image: url(../icons/icons8-arrow-96.png);
+    background-image: url(https://img.icons8.com/ios/70/back--v1.png);
     filter: opacity(.7);
     border: none;
-    
+    transform: rotate(180deg);
     padding: 10px;
-     background-color: transparent;
+    background-color: transparent;
     cursor: pointer;
-    width: 96px;
-    height: 96px;
+    width: 70px;
+    height: 70px;
     margin: 0;
 }
 

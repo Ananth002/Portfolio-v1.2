@@ -126,6 +126,7 @@ body {
     font-size: 38px;
     width: 1000px;
     white-space: pre-wrap;
+   
 }
 .about-me {
     display: grid;
@@ -134,16 +135,21 @@ body {
     height: 600px;
     justify-content: center;
     overflow: hidden;
+    align-items: center;
+    
 }
 .skill-box {
     display: flex;
     flex-direction: row;
-    width: 330px;
-    height: 150px;
+    width: 380px;
+    height: 160px;
     overflow: hidden;
     margin: 5px 5px;
     color: gray;
     gap: 20px;
+    
+ 
+    
 }
 .s-pg {
     flex: 2;
@@ -159,6 +165,8 @@ body {
 .s-pg p{
     font-family: var(--font-ro);
     font-size: 17px;
+    width: 100%;
+    height: 100%;
 }
 .img-p {
     opacity: 0.5;
@@ -192,36 +200,9 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2,1fr);
     gap: 50px;
-    align-items: center;
+
 }
-@media screen and (max-width :920px) {
-    .about-box{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,1fr);
-    }
-    .about-me{
-        height: 800px;
-    }
-    .Sub-1{
-        left: 50px;
-        font-size: 65px;
-    }
-}
-@media screen and (max-width :480px) {
-    
-    .Sub-1{
-        left: 10px;
-        font-size: 40px;
-        width: 100vw;
-        line-height: 42px;
-    }
-    .social-media{
-        visibility: hidden;
-    }
-    .slider{
-        height: 90vh;
-    }
-}
+
 
 .skills {
     width: 100%;
@@ -547,3 +528,70 @@ body {
     .circle-arrow.visible {
       display: flex;
     }
+@media screen and (max-width :1000px) {
+    .about-box{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .about-me{
+        height: 800px;
+    }
+    .Sub-1{
+        left: 50px;
+        font-size: 65px;
+    }
+}
+@media screen and (max-width :700px) {
+    
+    .Sub-1{ 
+        left: 20px;
+        font-size: 38px;
+        width: 90vw;
+        line-height: 42px;
+    }
+    .social-media{
+        visibility: hidden;
+    }
+    .slider{
+        height: 90vh;
+    }
+     .about-box{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }
+    .about-me{
+    height: 1500px;
+    }
+    .project-tt p {
+    width: 100vh;
+    font-size: 25px;
+    line-height: 40px;
+
+
+}
+.about-head p {
+    font-size: 38px;
+    width: 100%;
+}
+.About h2 {
+    width: 90%;
+    height:100%;
+    font-size: 25px;
+    white-space: inherit;
+    align-content: center;
+    line-height: 40px;
+    
+}
+.About{
+    height: 250px;
+  
+}
+.skills img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+}
+.sn{
+    font-size: 16px;
+}
+}

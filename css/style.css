@@ -47,19 +47,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    top: 100px;
+    top: 0;
     font-family: var(--font-BN);
     letter-spacing: 2px;
     line-height: 70px;
     z-index: 2;
     left: 100px;
-    height: 500px;
+    height: 100%;
     width: 600px;
+    font-size: 70px;
+   
 }
 
 .Sub-1 p {
-    color: white;
-    font-size: 70px;
+    color: white; 
     font-weight: bold;
     opacity: 0.9px;
 }
@@ -79,7 +80,7 @@ body {
     width: 55px;
     border-radius: 50px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.533);
+    background-color: transparent;
     box-shadow:
         0 4px 8px 0 rgba(0, 0, 0, 0.4),
         0 6px 20px 0 rgba(0, 0, 0, 0.4);
@@ -109,7 +110,6 @@ body {
     border: none;
     background-color: transparent;
 }
-
 
 .About {
     display: flex;
@@ -201,6 +201,22 @@ body {
     }
     .about-me{
         height: 800px;
+    }
+    .Sub-1{
+        left: 50px;
+        font-size: 65px;
+    }
+}
+@media screen and (max-width :480px) {
+    
+    .Sub-1{
+        left: 10px;
+        font-size: 40px;
+        width: 100vw;
+        line-height: 42px;
+    }
+    .social-media{
+        visibility: hidden;
     }
 }
 

@@ -188,8 +188,19 @@ body {
 .about-box {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
     gap: 50px;
+    align-items: center;
+}
+@media screen and (max-width :920px) {
+    .about-box{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .about-me{
+        height: 800px;
+    }
 }
 
 .skills {
